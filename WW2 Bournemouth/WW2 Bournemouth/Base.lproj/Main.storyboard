@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WW2_Bournemouth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Bombings" translatesAutoresizingMaskIntoConstraints="NO" id="4ZI-4P-Nw2">
+                                <rect key="frame" x="-575" y="-1590" width="1313" height="4020"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPF-Hl-fgd">
+                                <rect key="frame" x="133" y="457" width="149" height="110"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="33"/>
+                                <state key="normal" title="Explore">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="sYF-TS-5N4" kind="show" id="mfa-Qq-VDS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ExploreButton" destination="XPF-Hl-fgd" id="wfk-ZM-qv3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="137.94642857142856"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="Iok-Ba-vq2">
+            <objects>
+                <viewController id="sYF-TS-5N4" customClass="ViewController2" customModule="WW2_Bournemouth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6PH-R9-MBD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZfW-4l-crk">
+                                <rect key="frame" x="0.0" y="-4" width="414" height="851"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="x3X-OG-MCo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rf3-EU-pLo"/>
+                    <connections>
+                        <segue destination="WQj-6E-hN4" kind="show" destinationCreationSelector="MetropoleVid:" id="D0U-eE-VHU"/>
+                        <segue destination="EYZ-0g-KND" kind="show" id="k2u-QW-Cox"/>
+                        <segue destination="EW0-nQ-XBM" kind="show" id="eDc-po-xLu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eN2-HQ-sJo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Bombings" id="Lgv-gO-FyR">
+                    <rect key="frame" x="0.0" y="0.0" width="1657" height="1701"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </objects>
+            <point key="canvasLocation" x="1017" y="193"/>
+        </scene>
+        <!--MetropoleVidViewController-->
+        <scene sceneID="Lco-BB-36B">
+            <objects>
+                <avPlayerViewController title="MetropoleVidViewController" videoGravity="AVLayerVideoGravityResizeAspect" id="EYZ-0g-KND" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mlL-RA-m93"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gq7-cL-PVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2575" y="257"/>
+        </scene>
+        <!--BealesVidViewController-->
+        <scene sceneID="BU0-oc-dHw">
+            <objects>
+                <avPlayerViewController title="BealesVidViewController" videoGravity="AVLayerVideoGravityResizeAspect" id="EW0-nQ-XBM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ozw-7w-6Pe"/>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRL-2c-WRq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1950" y="956"/>
+        </scene>
+        <!--HoldenhurstVidViewController-->
+        <scene sceneID="AVu-Cb-4cP">
+            <objects>
+                <avPlayerViewController title="HoldenhurstVidViewController" videoGravity="AVLayerVideoGravityResizeAspect" id="WQj-6E-hN4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9ES-Zr-Skn"/>
+                    <connections>
+                        <segue destination="QX0-wu-mgf" kind="show" id="Oua-Hz-P6b"/>
+                    </connections>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNZ-G3-rfc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1923" y="-354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="GFq-Jt-Flo">
+            <objects>
+                <viewController id="QX0-wu-mgf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fV4-5F-TzH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="War.Defence" translatesAutoresizingMaskIntoConstraints="NO" id="qw0-yH-IcX">
+                                <rect key="frame" x="-22" y="-596" width="685" height="2116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCt-AN-h21">
+                                <rect key="frame" x="112" y="177" width="190" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="29"/>
+                                <state key="normal" title="Return to Map"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cCy-mR-aZR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9tq-0o-cKA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Oi-vO-h7c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2756.521739130435" y="-393.08035714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bombings" width="547.66668701171875" height="409"/>
+        <image name="War.Defence" width="595" height="842"/>
+    </resources>
+</document>
